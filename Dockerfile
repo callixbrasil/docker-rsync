@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER David Stefan <stefda@gmail.com>
+MAINTAINER orianbsilva <yohanobs@gmail.com>
 
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends rsync && \
