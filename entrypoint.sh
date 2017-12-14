@@ -4,8 +4,10 @@ VOLUME_NAME=${VOLUME_NAME:-volume}
 ALLOW=${ALLOW:-192.168.0.0/16 172.16.0.0/12}
 USER=${USER:-nobody}
 GROUP=${GROUP:-nogroup}
+PORT=${PORT:-873}
 
 cat <<EOF > /etc/rsyncd.conf
+port = ${PORT}
 uid = ${USER}
 gid = ${GROUP}
 use chroot = yes
